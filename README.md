@@ -5,6 +5,8 @@
 - Curro
 - Antonio
 - Tomás
+- Ángel
+- Rafa
 
 # Temática
 
