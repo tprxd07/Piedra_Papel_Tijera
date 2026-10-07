@@ -4,10 +4,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.GameController">
+<AnchorPane prefHeight="325.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.GameController">
    <children>
-      <Text layoutX="205.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clasificación">
+      <Text layoutX="195.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clasificación">
          <font>
             <Font size="35.0" />
          </font>
