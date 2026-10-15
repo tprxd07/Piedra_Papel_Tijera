@@ -1,18 +1,19 @@
 package org.example;
 
-import org.example.logica.Batalla;
-import org.example.logica.Jugador;
-import org.example.logica.Maquina;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-public class Main {
-    static void main() {
-        Jugador jugador = new Jugador("CurroGamer20", 1, 0, 0, 0);
-        Maquina maquina = new Maquina("Computaneitor", 2);
-
-        Batalla batalla = new Batalla(jugador, maquina);
-
-        batalla.jugarAlMejorDe3();
-
-        System.out.println(jugador);
+public class Main extends Application {
+    @Override
+    public void start(Stage stage) throws Exception {
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/views/inicio.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setTitle("Cuarzo Pergamino Tenazas");
+        stage.setScene(scene);
+        stage.show();
+        stage.setResizable(false);
     }
 }
+

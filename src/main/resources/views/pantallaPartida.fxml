@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="325.0" prefWidth="580.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.PartidaController">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="325.0" fitWidth="580.0" />
+
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="8.0" prefHeight="65.0" prefWidth="560.0" spacing="15.0">
+         <children>
+            <VBox alignment="CENTER_LEFT" prefWidth="200.0" spacing="2.0">
+               <children>
+                  <Label fx:id="lblNombreJugador" style="-fx-font-size: 19px; -fx-text-fill: #ff9900; -fx-effect: dropshadow(three-pass-box, #000000, 3, 0, 2, 2);" text="PLAYER" />
+                  <ProgressBar fx:id="barraVidaJugador" prefHeight="18.0" prefWidth="200.0" progress="1.0" style="-fx-accent: #2ecc71; -fx-control-inner-background: #c0392b; -fx-border-color: #f1c40f; -fx-border-width: 1.5px;" />
+               </children>
+            </VBox>
+
+            <VBox alignment="CENTER" prefWidth="100.0">
+               <children>
+                  <Label fx:id="lblMarcador" style="-fx-text-fill: #f1c40f; -fx-effect: dropshadow(one-pass-box, black, 4, 0, 2, 2);" text="0 - 0" />
+               </children>
+            </VBox>
+
+            <VBox alignment="CENTER_RIGHT" prefWidth="200.0" spacing="2.0">
+               <children>
+                  <Label fx:id="lblNombreMaquina" style="-fx-font-size: 19px; -fx-text-fill: #00e5ff; -fx-effect: dropshadow(three-pass-box, #000000, 3, 0, 2, 2);" text="IA" />
+                  <ProgressBar fx:id="barraVidaMaquina" nodeOrientation="RIGHT_TO_LEFT" prefHeight="18.0" prefWidth="200.0" progress="1.0" style="-fx-accent: #2ecc71; -fx-control-inner-background: #c0392b; -fx-border-color: #f1c40f; -fx-border-width: 1.5px;" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+
+      <ImageView fx:id="imgRyu" fitHeight="155.0" fitWidth="94.0" layoutX="90.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+         <image><Image url="@/sprites/ryu.png" /></image>
+      </ImageView>
+
+      <ImageView fx:id="imgKen" fitHeight="155.0" fitWidth="94.0" layoutX="398.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+         <image><Image url="@/sprites/ken.png" /></image>
+      </ImageView>
+
+      <VBox fx:id="contenedorBotones" alignment="CENTER" layoutX="225.0" layoutY="105.0" prefWidth="130.0" spacing="10.0">
+         <children>
+            <Button fx:id="btnPiedra" mnemonicParsing="false" onAction="#onPiedraClick" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #2c3e50; -fx-text-fill: #ecf0f1; -fx-font-size: 14px; -fx-border-color: #e67e22; -fx-border-width: 2px; -fx-cursor: hand;" text="PIEDRA" />
+            <Button fx:id="btnPapel" mnemonicParsing="false" onAction="#onPapelClick" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #2c3e50; -fx-text-fill: #ecf0f1; -fx-font-size: 14px; -fx-border-color: #e67e22; -fx-border-width: 2px; -fx-cursor: hand;" text="PAPEL" />
+            <Button fx:id="btnTijeras" mnemonicParsing="false" onAction="#onTijerasClick" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #2c3e50; -fx-text-fill: #ecf0f1; -fx-font-size: 14px; -fx-border-color: #e67e22; -fx-border-width: 2px; -fx-cursor: hand;" text="TIJERAS" />
+         </children>
+      </VBox>
+
+      <Label fx:id="lblEstadoRonda" alignment="CENTER" layoutX="140.0" layoutY="70.0" prefWidth="300.0" style="-fx-font-family: 'Arial'; -fx-font-size: 12px; -fx-font-weight: bold; -fx-text-fill: #f5f6fa; -fx-effect: dropshadow(one-pass-box, black, 3, 0, 1, 1);" text="" />
+
+      <Label fx:id="lblResultadoFinal" alignment="CENTER" layoutX="20.0" layoutY="125.0" prefHeight="70.0" prefWidth="540.0" style="-fx-text-fill: #e67e22; -fx-effect: dropshadow(three-pass-box, black, 6, 0, 3, 3);" text="" visible="false" />
+
+      <HBox fx:id="panelFinPartida" alignment="CENTER" layoutX="90.0" layoutY="210.0" prefWidth="400.0" spacing="20.0" visible="false">
+         <children>
+            <Button fx:id="btnReintentar" mnemonicParsing="false" onAction="#onReintentarClick" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #27ae60; -fx-text-fill: #ffffff; -fx-border-color: #2ecc71; -fx-border-width: 2px; -fx-cursor: hand;" text="REINTENTAR" />
+            <Button fx:id="btnVolverMenu" mnemonicParsing="false" onAction="#onVolverMenuClick" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #c0392b; -fx-text-fill: #ffffff; -fx-border-color: #e74c3c; -fx-border-width: 2px; -fx-cursor: hand;" text="MENU" />
+         </children>
+      </HBox>
+   </children>
+</Pane>

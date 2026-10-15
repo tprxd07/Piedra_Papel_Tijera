@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="325.0" maxWidth="565.0" minHeight="325.0" minWidth="565.0" prefHeight="325.0" prefWidth="565.0"
+            style="-fx-background-color: #202020;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.controller.GameController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bf2c2c" height="86.0" layoutY="9.0" stroke="BLACK" strokeType="INSIDE" width="565.0" />
+      <Polygon fill="#202020" layoutX="37.0" layoutY="62.0" points="-50.0, 40.0, 50.0, 40.0, 0.0, -60.0" rotate="90.0" scaleX="0.9" scaleY="0.8" scaleZ="0.9" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Polygon fill="#202020" layoutX="525.0" layoutY="62.0" points="-50.0, 40.0, 50.0, 40.0, 0.0, -60.0" rotate="270.0" scaleX="0.9" scaleY="0.8" scaleZ="0.9" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Text fill="#37dc34" layoutX="97.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STREET FIGHTER: RPS" textAlignment="CENTER" wrappingWidth="370.13671875">
+         <font>
+            <Font name="Impact" size="30.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtNombre" layoutX="95.0" layoutY="115.0" prefHeight="35.0" prefWidth="240.0"
+                 promptText="Introducir nombre..."
+                 style="-fx-background-color: #1a1a1a; -fx-text-fill: #f1c40f; -fx-prompt-text-fill: #8a8d93; -fx-border-color: #e67e22; -fx-border-width: 2px; -fx-font-family: 'Arial'; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 0 10 0 10;" />
+      <Button fx:id="btnConfirmar" layoutX="345.0" layoutY="115.0" mnemonicParsing="false" onAction="#onConfirmarClick" prefHeight="35.0" prefWidth="125.0"
+              text="Confirmar"
+              style="-fx-background-color: #2c3e50; -fx-text-fill: #ffffff; -fx-font-family: 'Impact'; -fx-font-size: 14px; -fx-border-color: #e67e22; -fx-border-width: 2px; -fx-cursor: hand;" />
+
+      <Label fx:id="lblMensajeNombre" alignment="CENTER" layoutX="95.0" layoutY="155.0" prefHeight="18.0" prefWidth="375.0"
+             style="-fx-font-family: 'Arial'; -fx-font-size: 11px; -fx-font-weight: bold; -fx-text-fill: #e74c3c;" text="" />
+
+      <Button fx:id="btnJugar" disable="true" layoutX="70.0" layoutY="185.0" mnemonicParsing="false" onAction="#onJugarClick" prefHeight="86.0" prefWidth="158.0"
+              text="JUGAR"
+              style="-fx-background-color: #2c3e50; -fx-text-fill: #ecf0f1; -fx-font-family: 'Impact'; -fx-font-size: 26px; -fx-border-color: #27ae60; -fx-border-width: 3px; -fx-cursor: hand;" />
+
+      <Button fx:id="btnClasificacion" layoutX="327.0" layoutY="185.0" mnemonicParsing="false" onAction="#onClasificacionClick" prefHeight="86.0" prefWidth="158.0"
+              text="RANKING"
+              style="-fx-background-color: #2c3e50; -fx-text-fill: #ecf0f1; -fx-font-family: 'Impact'; -fx-font-size: 22px; -fx-border-color: #f39c12; -fx-border-width: 3px; -fx-cursor: hand;" />
+   </children>
+</AnchorPane>
