@@ -1,4 +1,4 @@
-# Cuarzo Pergamino Tenazas
+# Street Fighter: RPS
 ## Equipo SinNombre
 
 ## Miembros:
