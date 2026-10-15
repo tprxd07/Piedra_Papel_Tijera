@@ -38,12 +38,14 @@
          </children>
       </HBox>
 
-      <ImageView fx:id="imgRyu" fitHeight="155.0" fitWidth="94.0" layoutX="90.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
-         <image><Image url="@/sprites/ryu.png" /></image>
+      <ImageView fx:id="imgRyu" fitHeight="155.0" fitWidth="94.0" layoutX="90.0" layoutY="145.0" pickOnBounds="true"
+                 preserveRatio="true">
+         <Image url="@/sprites/ryu.png"/>
       </ImageView>
 
-      <ImageView fx:id="imgKen" fitHeight="155.0" fitWidth="94.0" layoutX="398.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
-         <image><Image url="@/sprites/ken.png" /></image>
+      <ImageView fx:id="imgKen" fitHeight="155.0" fitWidth="94.0" layoutX="398.0" layoutY="147.0" pickOnBounds="true"
+                 preserveRatio="true">
+         <Image url="@/sprites/ken.png"/>
       </ImageView>
 
       <VBox fx:id="contenedorBotones" alignment="CENTER" layoutX="225.0" layoutY="105.0" prefWidth="130.0" spacing="10.0">
